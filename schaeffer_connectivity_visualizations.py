@@ -129,10 +129,10 @@ def imagesc_schaeffer_17(connectivity_matrix, parcel_labels, minmax, border_widt
 
         
     #Make and plot figure
-    fig = plt.figure(dpi=fig_dpi)
+    fig = plt.figure(dpi=dpi)
     plot_obj = plt.imshow(jet_conn_with_borders)
-    if len(plot_title) > 0:
-        plt.title(plot_title)
+    if len(title) > 0:
+        plt.title(title)
     
     #Add lines to identify network borders
     for i in network_edges[:-1]:
@@ -267,10 +267,10 @@ def imagesc_schaeffer_7(connectivity_matrix, parcel_labels, minmax, border_width
 
         
     #Make and plot figure
-    fig = plt.figure(dpi=fig_dpi)
+    fig = plt.figure(dpi=dpi)
     plot_obj = plt.imshow(jet_conn_with_borders)
-    if len(plot_title) > 0:
-        plt.title(plot_title)
+    if len(title) > 0:
+        plt.title(title)
     
     #Add lines to identify network borders
     for i in network_edges[:-1]:
